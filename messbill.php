@@ -11,7 +11,7 @@ if (!$conn) {
 if (isset($_POST['save'])) {
 
     $account_number = $_POST['account_number'];
-    $student_name = $_POST['student_name'];
+    $student_name = trim(strtoupper($_POST['student_name']));
     $total_days = $_POST['total_days'];
     $amount = 0;
     $mess = $_POST['mess'];
