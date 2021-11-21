@@ -12,13 +12,14 @@
     </div>
     <form action="messbill.php" method="post">
         <label>Enter Account Number</label>
-        <input type="number" name="account_number"><BR><BR>
+        <input type="number" name="account_number" minlength=5 maxlength=5><BR><BR>
         <label>Enter Student Name</label>
         <input type="text" name="student_name"><BR><BR>
         <label>Enter Days </label>
-        <input type="number" name="total_days"><BR><BR>
+        <input type="number" name="total_days" min=1 max=31><BR><BR>
         <label>Choose Mess</label>
         <select name="mess">
+            <option value="" selected disabled hidden>Select Mess</option>
             <option value="VEG">VEG</option>
             <option value="NON-VEG">NON-VEG</option>
         </select>
